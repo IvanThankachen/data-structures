@@ -1,3 +1,7 @@
+// Ivan Thankachen and Preston Probst
+//9/15/23
+//Downsize Tester Program
+// Test method that allows businesses to downsize employees. 
 import java.util.LinkedList;
 
 /**

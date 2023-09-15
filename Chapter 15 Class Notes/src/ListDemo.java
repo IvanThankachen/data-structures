@@ -81,7 +81,7 @@ public class ListDemo
         /* An enhanced for loop automatically creates an iterator! */
             if (n.equals("Harry"))
             {
-                staff.add("Charlie");
+                //staff.add("Charlie"); // same as using list remove method.
             }
        }
 
