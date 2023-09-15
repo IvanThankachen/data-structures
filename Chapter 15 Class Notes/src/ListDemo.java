@@ -72,9 +72,17 @@ public class ListDemo
         String n = iterator.next();
         if(n.equals("Harry"))
         {
-            staff.remove("Diana");
+            //staff.remove("Diana"); //ConcurrentModificationException
         }
         System.out.print(staff);
+       }
+
+       for(String n: staff){
+        /* An enhanced for loop automatically creates an iterator! */
+            if (n.equals("Harry"))
+            {
+                staff.add("Charlie");
+            }
        }
 
 
