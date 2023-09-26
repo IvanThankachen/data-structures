@@ -41,13 +41,14 @@ public class SudokuSolver {
         for (int i = 0; i < this.grid.length; i++)
         {
             this.rows.add(i, nums);
+            System.out.println(rows);
         }
 
         // create the list of sets for each col (this.cols)
         this.cols =  cols; 
         for (int j = 0; j < this.grid[0].length; j++)
         {
-            this.rows.add(j, nums);
+            this.cols.add(j, nums);
         } 
 
         // create the list of sets for each square (this.squares)
@@ -58,6 +59,10 @@ public class SudokuSolver {
          */
         // ...
         this.squares = squares;
+        for (int i = 0, j = 0; i < rows.size() && j < cols.size(); i++,j++)
+        {
+            System.out.println("l");
+        }
 
         // create a hash set for [1..9] (this.nums)
         this.nums = nums;
@@ -156,7 +161,7 @@ public class SudokuSolver {
     }
 
     public static void main(String[] args) {
-        String fileName = "src/puzzle1.txt";
+        String fileName = "Chapter 15 Activities/Sudoku/src/puzzle1.txt";
 
         SudokuSolver solver = new SudokuSolver(fileName);
         System.out.println(solver);
