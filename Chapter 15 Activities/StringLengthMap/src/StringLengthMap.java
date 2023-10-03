@@ -23,7 +23,8 @@ public class StringLengthMap
             while (in.hasNext())
             {
                 String word = clean(in.next());
-                Integer len = word.length();
+                Integer len = word.leng
+                th();
 
                 // Update the map here
                 // Modify Worked Example 15.1
