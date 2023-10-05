@@ -27,6 +27,7 @@ public class StackDemo
         {
             String command = commands.pop();
             System.out.println("Undo " + command);
+
             }
 
     }
