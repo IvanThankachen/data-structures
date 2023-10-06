@@ -65,10 +65,6 @@ public class Driveway
           else
           {
             driveway.pop();
-            for(int j = 0; j < street.size(); j++)
-            {
-              driveway.push(street.pop());
-            }
           }
         }
         
