@@ -42,6 +42,7 @@ public class Driveway
         license_plate = licensePlate;
 
         driveway.push(license_plate);
+        //System.out.println("Adding: " + driveway);
 
 
     }
@@ -55,20 +56,38 @@ public class Driveway
     {
         // Complete this method
         license_plate = licensePlate;
-        int spot = Math.abs(license_plate);
-        for(int i = 0; i < driveway.size(); i++)
+        //System.out.println("The license plate is " + license_plate);
+        Integer spot = Math.abs(license_plate);
+        int spot_index = driveway.indexOf(licensePlate);
+        //System.out.println("The index of the license plate is: " +  spot_index);
+
+
+        if (driveway.contains(licensePlate))
         {
-          if(i != spot)
+          for (int i = driveway.size()-1; i != spot_index; i--)
           {
-            street.push(driveway.pop());
+            
+            System.out.println("Removing: " + street.push(driveway.pop()));
+
+          
+            
+
+            
+            
           }
-          else
-          {
-            driveway.pop();
-          }
+
+          driveway.pop();
         }
+
+        else
+        {
+          System.out.println("This car is not in the driveway.");
+        }
+
         
 
+       
+        
 
     }
 
@@ -79,13 +98,11 @@ public class Driveway
     {
         System.out.println("In Driveway, starting at first in (one license plate per line):");
         // Print the cars in the driveway here
-        for(int k = 0; k < driveway.size(); k++)
         {
-          Integer drive = driveway.pop();
-          System.out.println(drive);
+           System.out.println(driveway);
         }
         System.out.println("In Street, starting at first in (one license plate per line):");
-        // Print the cars in the street here
+           System.out.println(street);
         
 
     }
