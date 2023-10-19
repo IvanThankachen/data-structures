@@ -6,9 +6,10 @@ import java.util.NoSuchElementException;
     in the list by following links and counting the
     elements until the end of the list is reached.
 */
-public class LinkedList
+public class LinkedList 
 {
     private Node first;
+    private Node last;
 
     /**
         Constructs an empty linked list.
@@ -16,6 +17,7 @@ public class LinkedList
     public LinkedList()
     {
         first = null;
+        last = null;
     }
 
     /**
@@ -23,9 +25,22 @@ public class LinkedList
         @return the number of elements in the list
     */
     public int size()
-    {
-        . . .
-    }
+
+       {
+
+        LinkedListIterator iterator = new LinkedListIterator();
+         int count = 0;
+         
+        while(iterator.hasNext())
+         {
+            count +=1;
+            System.out.println("see?");
+         }
+
+            return count;
+
+         
+       }
 
     /**
         Returns the first element in the linked list.

@@ -41,7 +41,9 @@ public class LinkedList
     */
     public boolean contains(Object obj)
     {
-        // ...
+        boolean doesContain;
+        for(i = 
+
     }
 
     /**
