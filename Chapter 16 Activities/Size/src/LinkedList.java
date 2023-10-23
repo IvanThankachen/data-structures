@@ -28,16 +28,12 @@ public class LinkedList
 
        {
 
-        LinkedListIterator iterator = new LinkedListIterator();
+        
          int count = 0;
+         Node current = first;
+         while(current != null)
          
-        while(iterator.hasNext())
-         {
-            count +=1;
-            System.out.println("see?");
-         }
-
-            return count;
+        
 
          
        }

@@ -26,7 +26,11 @@ public class LinkedList
     */
     public int size()
     {
-        . . .
+        if(first == null)
+        {
+            return 0;
+        }
+        return 1+size(first.next);
     }
 
 
