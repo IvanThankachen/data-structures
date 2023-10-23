@@ -40,7 +40,7 @@ public class LinkedListQueue
             temp.next = tail.next;
             temp = tail;
 
-            for (int i =)
+            
             //System.out.println(temp.data);
 
             
