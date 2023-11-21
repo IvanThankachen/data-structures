@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
 
+
 /*
  * The main class from the telegraph project.
  * Opens two windows on the screen and starts morse

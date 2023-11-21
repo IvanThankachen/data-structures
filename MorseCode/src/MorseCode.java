@@ -10,6 +10,7 @@ public class MorseCode
 
     private static TreeMap<Character, String> codeMap;
     private static TreeNode decodeTree;
+    
 
     public static void main(String[] args)
     {
@@ -97,9 +98,12 @@ public class MorseCode
     {
         StringBuffer morse = new StringBuffer(400);
 
-        /*
-            !!! INSERT CODE HERE
-        */
+       for(int i = 0; i < text.length();i++)
+       {
+        char letter = text.charAt(i);
+        morse.append(codeMap.get(letter));
+       }
+    
 
         return morse.toString();
     }
@@ -114,9 +118,10 @@ public class MorseCode
     {
         StringBuffer text = new StringBuffer(100);
 
-        /*
-            !!! INSERT CODE HERE
-        */
+        for(int i = 0; i < morse.length(); i++)
+        {
+
+        }
 
         return text.toString();
     }

@@ -1,3 +1,5 @@
+import java.util.Map;
+import java.util.HashMap;
 public class HuffmanDemo
 {
    public static void main(String[] args)
