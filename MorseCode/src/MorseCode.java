@@ -85,7 +85,23 @@ public class MorseCode
      */
     private static void treeInsert(char letter, String code)
     {
-        
+        TreeNode the_tree = decodeTree;
+        for(int i = 0; i < code.length()-1; i++)
+        {
+            code.substring(i, i+1).compareTo("-");
+            if(the_tree.getLeft() == null)
+            {
+                the_tree.setLeft(new TreeNode(" ",null,null));
+            }
+            the_tree.getLeft();
+
+            if(the_tree.getRight() == null)
+            {
+                the_tree.setRight(new TreeNode(" ", null, null));
+            }
+            the_tree.getRight();
+        }
+        the_tree.setValue(letter);
     }
 
     /**
